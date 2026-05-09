@@ -12,12 +12,14 @@ const taxonomyRoute = require("./routes/taxonomyRoute");
 const productRoutes = require("./routes/productRoutes");
 const extractionRoutes = require("./routes/extractionRoutes");
 const duplicateRoutes = require("./routes/duplicateRoutes");
+const cleaningRoutes = require("./routes/cleaningRoutes");
 
 // API Routes
 app.use("/api/taxonomy", taxonomyRoute);
 app.use("/api/products", productRoutes);
 app.use("/api/extract", extractionRoutes);
 app.use("/api/duplicates", duplicateRoutes);
+app.use("/api/cleaning", cleaningRoutes);
 
 // Home Route
 app.get("/", (req, res) => {
