@@ -14,6 +14,7 @@ const extractionRoutes = require("./routes/extractionRoutes");
 const duplicateRoutes = require("./routes/duplicateRoutes");
 const cleaningRoutes = require("./routes/cleaningRoutes");
 const priceRoutes = require("./routes/priceRoutes");
+const recommendationRoutes = require("./routes/recommendationRoutes");
 
 // API Routes
 app.use("/api/taxonomy", taxonomyRoute);
@@ -22,6 +23,7 @@ app.use("/api/extract", extractionRoutes);
 app.use("/api/duplicates", duplicateRoutes);
 app.use("/api/cleaning", cleaningRoutes);
 app.use("/api/price", priceRoutes);
+app.use("/api/recommendation", recommendationRoutes);
 
 
 
